@@ -1,0 +1,9 @@
+version: "2"
+services:
+  dockerwithphp:
+      container_name: php-xdbug
+      build: .
+      ports:
+        - "80:80"
+      extra_hosts:
+        - "www.chandravilas-demp-xdebug.com:127.0.0.1"
